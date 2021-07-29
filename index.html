@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+
+    <h1 class="header__h1">AlaskaBlackSB</h1>
+
+    <span class="header__span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsa.</span>
+
+    <nav class="header__nav" id="navMenu">
+      <a href="#">Inicio</a>
+      <a href="#">Menu</a>
+      <a href="#">Fecha</a>
+    </nav>
+
+    <img src="img/homero_456_336.jpeg" alt="" class="header__img">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet sit distinctio unde fugiat porro libero molestias soluta quasi. Officiis quas odio, dolorem, qui esse enim id soluta eos, doloribus vel optio a quam aut impedit at recusandae voluptatibus facere commodi quos! Ullam necessitatibus ex sit quia quo totam aliquam.</p>
+
+  </header>
+
+  <div class="toggle" id="toggleBtn">
+    <i class="toggle__btn fas fa-bars"></i>
+  </div>
+
+</body>
+</html>
+
+<script>
+  let toggleBtn = document.getElementById('toggleBtn'),
+      navMenu = document.getElementById('navMenu');
+
+    toggleBtn.addEventListener('click', function(){
+      navMenu.classList.toggle('active');
+    }) 
+
+</script>
